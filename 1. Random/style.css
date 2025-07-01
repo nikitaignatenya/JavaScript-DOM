@@ -23,6 +23,7 @@ body {
 }
 
 .maincart {
+  position: relative;
   margin-top: 36px;
   background-color: rgba(33, 41, 49, 1);
   border-radius: 21px;
@@ -34,7 +35,7 @@ body {
     position: relative;
     top: 18px;
     left: 23px;
-    background-image: url(/images/Group\ 15.svg);
+    background-image: url(./images/Group\ 15.svg);
     width: 57px;
     height: 13px;
   }
@@ -50,7 +51,20 @@ body {
   }
 }
 
-.backLine {
+.maincart::after {
+  top: 20px;
+  left: 20px;
+
+  content: "";
+  height: 360px;
+  width: 700px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+}
+
+/* .backLine {
   position: absolute;
   top: 250px;
   left: 247px;
@@ -61,4 +75,4 @@ body {
   border-width: 3px;
   border-style: solid;
   border-color: black;
-}
+} */

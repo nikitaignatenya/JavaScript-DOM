@@ -19,4 +19,4 @@ function randomText() {
   text.style.color = colorArr[Math.round(Math.random() * 2)];
 }
 
-setInterval(randomText, 200);
+setInterval(randomText, 2000);
