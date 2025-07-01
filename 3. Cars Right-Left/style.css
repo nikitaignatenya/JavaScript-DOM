@@ -13,18 +13,14 @@ body .slider {
   align-items: center;
   justify-content: center;
   gap: 70px;
-  #slide {
-    max-width: 300px;
-    border: 1px solid teal;
-    border-radius: 20px;
-  }
+
   button {
     position: absolute;
     padding: 10px 20px;
     border: 2px solid green;
     border-radius: 8px;
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: green;
     font-family: sans-serif;
   }
   button:hover {
@@ -35,5 +31,26 @@ body .slider {
   }
   #next {
     right: 100px;
+  }
+}
+
+.container {
+  height: 450px;
+  max-width: 300px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  #slide {
+    max-width: 300px;
+    border: 1px solid teal;
+    border-radius: 20px;
+  }
+  .price_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
